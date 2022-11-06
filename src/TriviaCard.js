@@ -55,7 +55,7 @@ console.log(correctArray)
 return !showAnswers ? 
 (
   <div className={`trivia-card ${showAnswers}`}  >
-      <h3>TriviaCard {index + 1}</h3>
+      <h3>Trivia Card {index + 1}</h3>
       <h6>{card.difficulty}</h6>
       <p>{card.question}</p>
     

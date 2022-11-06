@@ -12,7 +12,7 @@ const Selection = ({select, setSelect, setQuestions}) => {
    };
 
    const handleSelect = (e) =>{
-    fetch(`https://opentdb.com/api.php?amount=10&category=${select}`)
+    fetch(`https://opentdb.com/api.php?amount=12&category=${select}`)
       .then((response) => response.json())
       .then((triviaquest) => {
         setQuestions(triviaquest.results);

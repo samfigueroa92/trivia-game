@@ -5,6 +5,11 @@ const About = () => {
   return (
     <div className="About">
       <h2>Hacker Team</h2>
+      <div className="desc">
+        <h5>
+          This Trivia Game application is built during Pursuit Major League Hacking Event. Our team of hackers from different Pursuit Cohorts have demonstrated great teamwork to accomplish our goal during this one-day event.
+        </h5>
+      </div>
       <div className="collaborators">
         <section className="Samantha">
           <div class="flip-card">
@@ -21,7 +26,8 @@ const About = () => {
                 </p>
               </div>
               <div class="flip-card-back">
-                <p>this is stuff about me</p>
+                <p>I currently work in administration. In my spare time, I have been working on my full-stack web-development skills as a Pursuit fellow. I am now proficient in Javascript and React. When I am not working or coding I am most likely playing video games, watching my favorite shows or practicing how to roller skate. 
+</p>
                 <a
                   href="https://www.linkedin.com/in/samantha-figueroa-fs/"
                   target="_blank"
@@ -113,7 +119,7 @@ const About = () => {
                 </p>
               </div>
               <div class="flip-card-back">
-                <p>Add your description</p>
+                <p>Pursuit Fellow | Full Stack Web Developer | Collaborating with other web developers to create solutions with amazing softwares.</p>
                 <a
                   href="https://www.linkedin.com/in/derekpeterson-plutus/"
                   target="_blank"

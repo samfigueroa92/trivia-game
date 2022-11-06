@@ -8,15 +8,39 @@
 .trivia-card{
     width: 250px;
     height: 500px;
-    border-color: green solid 2px;
-    border: 1px solid black;
-    padding: 10px;
-    margin: 5px;
-    background-color: white;
-    box-shadow: 5px 5px 15px rgb(0,0,0,0.9);
-    border-radius: 25px;
+    margin-bottom: 20px;
+}
+
+h3{
+    padding-top: 15px;
 }
 
 button{
-    margin-bottom: 20px;
+    border: solid 2px;
+  padding: 0.5rem;
+  border-radius: 0.25rem;
+  font-weight: 700;
+  margin: 10px;
 }
+
+.card{
+    margin-top: 1rem;
+  min-height: 300px;
+  width: 250px;
+  position: relative;
+  border-radius: 0.25rem;
+
+}
+
+.front,
+.back{
+    box-sizing: border-box;
+  border-radius: 0.25rem;
+  height: 100%;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  width: 100%;
+  
+}
+

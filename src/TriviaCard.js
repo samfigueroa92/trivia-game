@@ -1,8 +1,10 @@
 import React, { useState, useEffect } from "react";
+import "./TriviaCard.css"
 
 function TriviaCard({ card, index }) {
   const [answerArray, setAnswerArray] = useState([]);
   const [showAnswers, setShowAnswers] = useState(false);
+  const[boolean,setBoolean] = useState(false)
   const [userSelection, setUserSelection] = useState('')
 
   useEffect(() => {
@@ -32,17 +34,28 @@ function TriviaCard({ card, index }) {
 
   const handleChange = (e)=>{
     setUserSelection(e.target.value)
+    console.log(e.target.value)
     
   }
+
   const handleClick = (e) =>{
     console.log(e)
     setShowAnswers(!showAnswers)
+    if(userSelection.toLowerCase() === card.correct_answer.toLowerCase()){
+      setBoolean(true)
+    }else{
+      setBoolean(false)
+    }
   }
+  console.log(userSelection, card.correct_answer)
+  console.log(boolean)
+
+
 return !showAnswers ? 
 (
   <div className={`trivia-card ${showAnswers}`}  >
       <h3>TriviaCard {index + 1}</h3>
-      <h5>{card.difficulty}</h5>
+      <h6>{card.difficulty}</h6>
       <p>{card.question}</p>
     
     {card.type === "boolean" ? (
@@ -92,6 +105,7 @@ return !showAnswers ?
           value={answerArray[3]}
         />
         </label>
+        <br></br>
         <button onClick={handleClick}>Submit</button>
         
    </div>
@@ -102,7 +116,8 @@ return !showAnswers ?
 (
 <div className={`trivia-card ${showAnswers}`}>  
   <h3>TriviaCard {index + 1}</h3>
-  <h4>{card.difficulty}</h4>
+  <h6>{card.difficulty}</h6>
+  {(boolean) ?<h2 id = "green">CORRECT</h2>: <h2 id ="red">INCORRECT</h2>}
   <p>{card.question}</p>
   <h4>{card.correct_answer}</h4>
   </div>
@@ -111,59 +126,3 @@ return !showAnswers ?
 }
 
 export default TriviaCard;
-
-// return !showAnswers ? (
-//   <div className="trivia-card">
-//     <h3>TriviaCard {index + 1}</h3>
-//     <h4>{card.difficulty}</h4>
-//     <p>{card.question}</p>
-//     <p onClick={() => setShowAnswers(!showAnswers)}>Select An Answer</p>
-//   </div>
-// ) : (
-//   <div className="trivia-card">
-//     {card.type === "boolean" ? (
-//       <div>
-//         <input type="radio" id="true/false" name="boolean" value="true" />
-//         <label htmlFor="true">True</label>
-//         <br></br>
-//         <input type="radio" id="true/false" name="boolean" value="false" />
-//         <label htmlFor="false">False</label>
-//       </div>
-//     ) : (
-//       <div>
-//          <p onClick={() => setShowAnswers(!showAnswers)}>Show Question</p>
-//         <input
-//           type="radio"
-//           id="multiple"
-//           name="choice"
-//           value={answerArray[0]}
-//         />
-//         <label htmlFor={answerArray[0]}>{answerArray[0]}</label>
-//         <br></br>
-//         <input
-//           type="radio"
-//           id="multiple"
-//           name="choice"
-//           value={answerArray[1]}
-//         />
-//         <label htmlFor={answerArray[1]}>{answerArray[1]}</label>
-//         <br></br>
-//         <input
-//           type="radio"
-//           id="multiple"
-//           name="choice"
-//           value={answerArray[2]}
-//         />
-//         <label htmlFor={answerArray[2]}>{answerArray[2]}</label>
-//         <br></br>
-//         <input
-//           type="radio"
-//           id="multiple"
-//           name="choice"
-//           value={answerArray[3]}
-//         />
-//         <label htmlFor={answerArray[3]}>{answerArray[3]}</label>
-//       </div>
-//     )}
-//   </div>
-// );

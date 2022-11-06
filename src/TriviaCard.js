@@ -1,11 +1,12 @@
 import React, { useState, useEffect } from "react";
 import "./TriviaCard.css"
 
-function TriviaCard({ card, index }) {
+function TriviaCard({ card, index, setCorrectArray, correctArray}) {
   const [answerArray, setAnswerArray] = useState([]);
   const [showAnswers, setShowAnswers] = useState(false);
   const[boolean,setBoolean] = useState(false)
   const [userSelection, setUserSelection] = useState('')
+  
 
   useEffect(() => {
     let array = [card.correct_answer, ...card.incorrect_answers];
@@ -43,13 +44,13 @@ function TriviaCard({ card, index }) {
     setShowAnswers(!showAnswers)
     if(userSelection.toLowerCase() === card.correct_answer.toLowerCase()){
       setBoolean(true)
+      setCorrectArray([...correctArray, ..."t"])
     }else{
       setBoolean(false)
+      setCorrectArray([...correctArray, ..."f"])
     }
   }
-  console.log(userSelection, card.correct_answer)
-  console.log(boolean)
-
+console.log(correctArray)
 
 return !showAnswers ? 
 (

@@ -4,3 +4,14 @@
 #green{
     color:green;
 }
+
+.trivia-card{
+    width: 250px;
+    height: 500px;
+    margin-left: 26%;
+    border-color: green solid 2px;
+}
+
+button{
+    margin-bottom: 20px;
+}

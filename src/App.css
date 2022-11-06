@@ -1,10 +1,16 @@
 .NavBar img{
-    width: 150px;
+    width: 100px;
 }
 
 .Home{
     text-align: center;
     margin: 5px;
-    padding: 25px;
+    padding: 10%;
+    height: 500px;
 }
+
+.App{
+    cursor: pointer;
+}
+
 

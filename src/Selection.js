@@ -16,7 +16,7 @@ const Selection = ({select, setSelect, setQuestions}) => {
       .then((response) => response.json())
       .then((triviaquest) => {
         setQuestions(triviaquest.results);
-        console.log(triviaquest.results);
+
       })
       .catch((error) => {
         console.error(error);
@@ -24,7 +24,6 @@ const Selection = ({select, setSelect, setQuestions}) => {
 
     let {value} = e.target
     setSelect(selectObject[value])
-    console.log(selectObject[value])
    };
    
   return (

@@ -6,9 +6,10 @@
 }
 
 .trivia-card{
-    width: 90%;
-    height: 90%;
-    margin-bottom: 20px;
+    width: 300px;
+    height: 400px;
+    margin: 10px 10px;
+    
 }
 
  /* :hover .trivia-card */

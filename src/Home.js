@@ -9,6 +9,7 @@ const Home = () => {
 
   return (
     <div className="Home">
+  
       <h1>Trivia Game</h1>
       <h3>Select a Category:</h3>
       <Selection select={select} setSelect={setSelect} setQuestions={setQuestions} />

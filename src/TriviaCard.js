@@ -82,44 +82,44 @@ function TriviaCard({ card, index, setCorrectArray, correctArray }) {
           </div>
         ) : (
           <div onClick={handleChange}>
-            <label htmlFor={answerArray[0]}>
-              {answerArray[0]}
               <input
                 type="radio"
                 id="multiple"
                 name={`choice${index + 1}`}
                 value={answerArray[0]}
               />
+              <label htmlFor={answerArray[0]}>
+              {answerArray[0]}
             </label>
             <br></br>
-            <label htmlFor={answerArray[1]}>
-              {answerArray[1]}
               <input
                 type="radio"
                 id="multiple"
                 name={`choice${index + 1}`}
                 value={answerArray[1]}
               />
+              <label htmlFor={answerArray[1]}>
+              {answerArray[1]}
             </label>
             <br></br>
-            <label htmlFor={answerArray[2]}>
-              {answerArray[2]}
               <input
                 type="radio"
                 id="multiple"
                 name={`choice${index + 1}`}
                 value={answerArray[2]}
               />
+               <label htmlFor={answerArray[2]}>
+              {answerArray[2]}
             </label>
             <br></br>
-            <label htmlFor={answerArray[3]}>
-              {answerArray[3]}
               <input
                 type="radio"
                 id="multiple"
                 name={`choice${index + 1}`}
                 value={answerArray[3]}
               />
+              <label htmlFor={answerArray[3]}>
+              {answerArray[3]}
             </label>
             <br></br>
             <button onClick={handleClick}>Submit</button>

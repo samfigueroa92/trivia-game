@@ -6,17 +6,18 @@
 }
 
 .trivia-card{
-    width: 250px;
-    height: 400px;
+    width: 90%;
+    height: 90%;
     margin-bottom: 20px;
 }
 
+ /* :hover .trivia-card */
 h3{
     padding-top: 15px;
 }
 
 button{
-    border: solid 2px;
+  border: solid 2px;
   padding: 0.5rem;
   border-radius: 0.25rem;
   font-weight: 700;

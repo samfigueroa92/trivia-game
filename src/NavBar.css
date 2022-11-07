@@ -1,0 +1,13 @@
+.NavBar img{
+    width: 150px;
+    margin-left: 0px;
+}
+.NavBar{
+    height: 0;
+}
+.home{
+    margin-left: 70%;
+}
+.about{
+    margin-left: 100%;
+}

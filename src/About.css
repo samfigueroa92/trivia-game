@@ -73,3 +73,6 @@ h2{
     color: black;
     transform: rotateY(180deg);
   }
+.About{
+  margin-top: 5%;
+}

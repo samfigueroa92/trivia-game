@@ -7,7 +7,7 @@ const About = () => {
       <h2>Hacker Team</h2>
       <div className="desc">
         <h5>
-          This Trivia Game application is built during Pursuit Major League Hacking Event. Our team of hackers from different Pursuit Cohorts have demonstrated great teamwork to accomplish our goal during this one-day event.
+          During the Pursuit 2022 Hackathon students were given 24 hours to build a Website. Our team was composed the Morning Cohort (8.3) and the Evening Cohort (8.4). During the Hackathon the team priorited Ideation and Project Mapping to develop a Product that had duality, Entertaining and Educational. 
         </h5>
       </div>
       <div className="collaborators">

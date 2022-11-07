@@ -1,6 +1,7 @@
 import Selection from "./Selection";
 import TriviaQuestions from "./TriviaQuestions";
 import React, { useEffect, useState } from "react";
+import "./Home.css"
 
 const Home = () => {
   const [select, setSelect] = useState("");

@@ -32,8 +32,9 @@ function TriviaCard({ card, index, setCorrectArray, correctArray }) {
   }, []);
 
   const handleChange = (e) => {
-    setUserSelection(e.target.value);
-    console.log(e.target.value);
+      setUserSelection(e.target.value);
+  
+    // console.log(e.target.value);
   };
 
   const handleClick = (e) => {
@@ -47,7 +48,7 @@ function TriviaCard({ card, index, setCorrectArray, correctArray }) {
       setCorrectArray([...correctArray, ..."f"]);
     }
   };
-  console.log(correctArray);
+  // console.log(correctArray);
 
   return !showAnswers ? (
     <div className={"trivia-card"}>

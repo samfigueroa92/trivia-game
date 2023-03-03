@@ -5,5 +5,5 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 ## Hackers
 1. Samantha Figueroa
 2. Kalilah Clarke
-3. Derek Peterson
+
 
